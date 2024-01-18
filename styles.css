@@ -115,9 +115,9 @@ ul li span:hover{
     background: #edeef096;
 }
 
-@media only screen and (max-width: 320px) and (max-height: 568px) {
+@media only screen and (min-width: 320px) and (max-width: 356px) or (max-height: 568px) {
     body {
-        height: 100vh;
+        height: 80vh;
     }
 
     button{
@@ -131,9 +131,38 @@ ul li span:hover{
     }
 }
 
-@media only screen and (max-width: 414px) and (max-height: 736px) {
+@media only screen and (min-width: 356px) and (max-width: 414px) and (max-height: 736px) {
     body {
         height: 90vh;
     }
 
+    button{
+        padding: 9px 30px;
+        font-size: 14px;
+        right: 100px;
+    }
+}   
+
+@media only screen and (min-width: 320px) and (max-width: 356px) {
+    body {
+        height: 80vh;
+    }
+
+    button {
+        padding: 9px 30px;
+        font-size: 14px;
+        margin-left: -28px;
+    }
+
+    input {
+        flex: 0 0 auto; /* Don't grow or shrink, and take content size */
+    }
+
+    .todo-app {
+        margin-top: 2rem;
+    }
+
+    .row{
+        padding-left: 5px;
+    }
 }
